@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cooperativa Recicladores</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="box">
+            <div class="glass">
+                <h2 class="titulo" align="center"><i class="fa-sharp fa-solid fa-recycle reciclar"></i>Formulario<i class="fa-sharp fa-solid fa-recycle reciclar"></i></h2>
+                <form action="">
+                    <section class="parrafo" align="center">
+                        <input type="text" placeholder="Ingrese su Nombre">
+                        <input type="text" placeholder="Ingrese su Apellido">
+                        <input type="number" placeholder="Ingrese su Edad">
+                        <input type="text" placeholder="Ingrese su Género (Masculino - Femenino)">
+                        <input type="number" placeholder="Ingrese su Estrato">
+                        <select name="Nac" id="nac">
+                            <option value="1">Seleccione</option>
+                            <option value="">Argentina</option>
+                            <option value="">Bolivia</option>
+                            <option value="">Brasil</option>
+                            <option value="">Chile</option>
+                            <option value="">Colombia</option>
+                            <option value="">Ecuador</option>
+                            <option value="">Estados Unidos</option>
+                            <option value="">Panamá</option>
+                            <option value="">Paraguay</option>
+                            <option value="">Perú</option>
+                            <option value="">Uruguay</option>
+                            <option value="">Venezuela</option>
+                        </select>
+                        <p>De acuerdo con <a href="#" onclick="alert('No hay Terminos y Condiciones aún')">Terminos y Condiciones</a></p>
+                        <button class="botons" type="submit"><span>Registrar</span></button>
+                    </section>
+                </form>
+            </div>
+        </div>
+
+        <section class="modal">
+            <div class="modal_container">
+                <img class="modal_img" src="/img/reciclaje.png" alt="">
+                <h1 class="modal_title" align="center">Requisitos para entrar a nuestra cooperativa</h1>
+                <p class="pmod"><i class="fa-solid fa-check fa-lg check"></i> Si es <b>Hombre</b> mayor de 20 años o <b>Mujer</b> mayor de 18 años podrá entrar a nuestra cooperativa.</p>
+                <p class="pmod"><i class="fa-solid fa-check fa-lg check"></i> Si su estrato es menor o igual que tres.</p>
+                <p class="pmod"><i class="fa-solid fa-check fa-lg check"></i> Si su nacionalidad es colombiana, de lo contrario deberá tener un permiso</p>
+                <p class="pmod"><img class="sad" src="/img/sad.png" alt=""> Si no cumple con alguno de estos requisitos no puede ser contratado.</p>
+                <a class="modal_close" href="#" align="center">Cerrar Modal</a>
+            </div>
+        </section>
+
+    </div>
+    <script src=""></script>
+    <script src="/js/modal.js"></script>
+    <script src="https://kit.fontawesome.com/6f3964109e.js" crossorigin="anonymous"></script>
+</body>
+</html>

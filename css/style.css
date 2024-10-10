@@ -1,0 +1,175 @@
+@font-face {
+    font-family: louis;
+    src: url(/font/Louis\ George\ Cafe.ttf);
+}
+@font-face {
+    font-family: louisb;
+    src: url(/font/Louis\ George\ Cafe\ Bold.ttf);
+}
+@font-face {
+    font-family: sunshine;
+    src: url(/font/Sunshine.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(10deg, rgb(0, 255, 0), green);
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+}
+.glass{
+    width: 20%;
+    height: 60%;
+    backdrop-filter: blur(10px);
+    border-radius: 2%;
+    background: #24303c;
+    box-shadow: 0 10px 26px 0 rgba(0, 0, 0, .5);
+    font-family: louis;
+}
+.parrafo{
+    margin: 4%;
+    color: white;
+}
+.titulo{
+    color: white;
+    font-family: sunshine;
+}
+input, select, button{
+    margin: 2%;
+    padding: 3%;
+    width: 80%;
+    background: #24303c;
+    border-color: grey;
+    border-radius: 4px;
+    border: 1px solid #18a362;
+    text-align: center;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: #18a362;
+    text-decoration: underline;
+}
+.botons{
+    width: 90%;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 25px;
+    transition: all .3s ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    font-family: louisb;
+    font-size: 15px;
+}
+.botons::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 80px);
+    border-right: 49px solid transparent;
+    border-bottom: 49px solid #18a362;
+    transition: .4s ease-in-out all;
+}
+.botons:hover::after{
+    left: 0;
+}
+.botons span{
+    position: relative;
+    z-index: 2;
+    transition: .75s ease all;
+}
+.reciclar{
+    margin-left: 7%;
+    margin-right: 7%;
+    color: #18a362;
+}
+/*#1f53c5* azul bonito/
+
+/* MODAL */
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+}
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+.modal_container{
+    width: 90%;
+    background-color: #fff;
+    max-width: 600px;
+    max-height: 82%;
+    margin: auto;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+.modal_title{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-family: sunshine;
+}
+.pmod{
+    margin: 5px;
+    font-family: louis;
+}
+.modal_img{
+    width: 90%;
+    max-width: 300px;
+    margin: auto;
+}
+.modal_close{
+    margin: auto;
+    font-family: louisb;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(226, 57, 57);
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+.modal_close:hover{
+    color: rgb(226, 57, 57);
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.check{
+    color: #18a362;
+}
+.sad{
+    max-width: 3.5%;
+}
